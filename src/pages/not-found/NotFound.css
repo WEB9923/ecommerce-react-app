@@ -1,0 +1,48 @@
+.error-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.error-page img {
+  width: 550px;
+}
+.error-page h1 {
+  color: #e64242;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 45px;
+}
+.error-page a {
+  padding: 10px 30px;
+  background-color: #ad0dad;
+  transition: 0.2s ease;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.error-page a:hover {
+  background-color: #c703c7;
+}
+@media screen and (max-width: 850px) {
+  .error-page img {
+    width: 450px;
+  }
+  .error-page h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .error-page img {
+    width: 350px;
+  }
+  .error-page h1 {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=NotFound.css.map */

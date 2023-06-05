@@ -1,0 +1,47 @@
+
+.error-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  img{
+    width: 550px;
+  }
+  h1{
+    color: #e64242;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 45px;
+  }
+  a{
+    padding: 10px 30px;
+    background-color: #ad0dad;
+    transition: .2s ease;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 18px;
+    &:hover{
+      background-color: #c703c7;
+    }
+  }
+  @media screen and (max-width: 850px){
+    img{
+      width: 450px;
+    }
+    h1{
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    img{
+      width: 350px;
+    }
+    h1{
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.header {
+  height: calc(100vh - 90px);
+  width: 100%;
+}
+.header .hero {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 50px;
+  overflow: hidden;
+}
+.header .hero .left-side {
+  width: 40%;
+  animation: heroTextANim 1.3s ease;
+}
+.header .hero .left-side p {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #414141;
+  margin-bottom: 20px;
+  padding: 20px 5px;
+}
+.header .hero .left-side .hero-btn {
+  padding: 10px 30px;
+  border-radius: 6px;
+  background-color: #ad0dad;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: capitalize;
+  user-select: none;
+  transition: 0.2s ease;
+}
+.header .hero .left-side .hero-btn:hover {
+  background-color: #c703c7;
+}
+.header .hero .right-side {
+  width: 40%;
+  animation: heroImageAnim 1.3s ease;
+}
+.header .hero .right-side img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 850px) {
+  .header .hero {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .header .hero .left-side {
+    width: 100%;
+  }
+  .header .hero .right-side {
+    width: 400px;
+  }
+}
+
+@keyframes heroImageAnim {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes heroTextANim {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

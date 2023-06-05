@@ -1,0 +1,10 @@
+*{margin:0;padding:0;box-sizing:border-box;list-style-type:none;text-decoration:none;-webkit-tap-highlight-color: transparent;}
+body{font-family: "Poppins", sans-serif;}
+.container{margin: auto;max-width: 1150px;width: 100%;}
+@media screen and (max-width: 850px){.container{padding: 0 30px;}}
+section{padding: 50px 0;}
+a:active{color:#ad0dad;text-decoration: none}
+::selection{background-color: #900090;color: #fff;min-height: 350px;position: relative;}
+::-webkit-scrollbar{width: 8px;background-color: #d1d1d1;}
+::-webkit-scrollbar-thumb{background-color: #ad0dad;}
+

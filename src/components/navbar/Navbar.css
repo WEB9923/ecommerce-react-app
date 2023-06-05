@@ -1,0 +1,38 @@
+.navbar {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.navbar .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container .logo {
+  width: 70px;
+  height: 70px;
+}
+.navbar .container .logo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.navbar .container .link-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar .container .link-list li a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navbar .container .link-list li a.active {
+  color: #ad0dad;
+}
+
+/*# sourceMappingURL=Navbar.css.map */
